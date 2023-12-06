@@ -21,188 +21,98 @@ const splashScreen = true // recommended: for best behavior after refresh
 // --- 👋 Greeting Section ---
 const greeting = {
     intro: "Hello 👋, my name is",
-    name: "Maxim Shelepov",
-    message: "I'm a computer science student and an aspiring software engineer. Currently working as a web developer at my university building tools to aid students, educators, and staff.",
-    basedLocation: "Raleigh, NC",
-    resumeLink: "https://docs.google.com/document/d/1Sa_sK3RMusoezzgzxu8LkV16i2Jra2qd/edit?usp=sharing&ouid=113657039181859132688&rtpof=true&sd=true", // recommended: google drive file share link (change to "anyone on the internet can view")
+    name: "Siddharth Yadav",
+    message: "I'm a Information Technology student and an aspiring software engineer.",
+    basedLocation: "Prayagraj, UP, INDIA",
+    resumeLink: "https://drive.google.com/file/d/1OHU8XjzqCDLaTNszKDn3WyFLgpx6c4xQ/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
-        link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
-        custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
+        link: "images/logo.png", // use relative path from  parent directory -> ex: images/image.ext
+        custom:true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
     },
-    portraitLink: 'images/portrait.jpg'
+    portraitLink: 'images/portrait.jpeg'
 }
 
 const socialMediaLinks = {
-    github: "https://github.com/feifyKike",
-    linkedin: "https://www.linkedin.com/in/maxim-shelepov1",
-    medium: "https://medium.com/@mimaishel",
-    stackoverflow: "https://stackoverflow.com/users/13826671/maxim"
+    github: "https://github.com/suju1811",
+    linkedin: "https://www.linkedin.com/in/siddharth-yadav-472a62201/",
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
 const about = {
     autobiography: [
-        "My name is Maxim Shelepov and I'm a computer science student at North Carolina State University. I have a passion for coding in languages such as Python, Java, PHP, & Swift. Work in web development and have experience with Django and Laravel frameworks.",
-        "Responsible, organized, problem solver, and independent thinker. Work well in a team and a quick learner. Programming for 3+ years and have 4 years of experience in advanced mathematics such as calculus, statistics, and discrete mathematics. Currently working as a web development intern for my university."
+        "My name is Siddharth Yadav and I'm a Information Technology(IT) student at Motilal Nehru National Institute of Technology, Allahabad. I'm Responsible, organized, and problem solver. Work well in a team and a quick learner.",
+        "I am deeply passionate about programming and development. Whether it's building robust applications, optimizing algorithms, or delving into new frameworks, my enthusiasm for development fuels my commitment to staying at the forefront of this dynamic field. I am excited about the prospect of contributing my skills and dedication to meaningful projects that push the boundaries of what technology can achieve."
     ], // Separated items are paragraphs
     techStack: [
-        "PHP",
-        "Python",
         "JavaScript",
-        "Vue.js",
+        "React.js",
+        "Node.js",
+        "Python",
+        "MongoDB",
         "MySQL",
-        "Swift"
     ],
-    photo1Link: "images/portrait1.jpeg",
-    photo2Link: "images/portrait2.jpeg",
-    photo3Link: "images/portrait3.jpeg"
+    // photo1Link: "images/portrait1.jpeg",
+    // photo2Link: "images/portrait2.jpeg",
 }
 
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "Web Dev Intern",
+        position: "SDE Intern",
         company: {
-            name: "WolfTech",
-            link: "https://tools.wolftech.ncsu.edu/support/index.php/WolfTech_Information_Technology"
+            name: "BNY MELLON",
+            link: "https://drive.google.com/file/d/1RKUNDTlDLMcRRV221659CFMsIf6iu79b/view?usp=sharing"
         },
-        duration: "Aug 2022 - Present",
+        duration: "MAY 2023 - AUG 2023",
         bulletPoints: [
-            "Resolved issues and developed new tools within several university web applications (email automation, research discovery, educational resources, scheduling tools, and text-generative AI news sharing).",
-            "Achieved 100+ github code contributions as an intern on the team.",
-            "Currently rebuilding and modernizing the university digital sign manager and system."
+            "Worked with CCAR(Comprehensive Capital Analysis and Review) tech team which handles the company capital adequacy and risk management practices.",
+            "Designed and developed an automated dashboard that automates the manual process of STOG report generation which saves a lot of man hours and also eliminates the possibility of human errors."
         ],
         hashtags: [
-            "Laravel",
-            "PHP",
+            "Pyhton",
+            "Matplotlib",
             "MySQL",
-            "JS",
-            "Vue.js",
-            "HTML",
-            "Tailwind"
-        ]
-    },
-    {
-        position: "Math Tutor",
-        company: {
-            name: "Mathnasium",
-            link: "https://www.mathnasium.com"
-        },
-        duration: "Jan 2022 - Aug 2022",
-        bulletPoints: [
-            "Taught math to students elementary through high school covering topics from basic algebra to college-level calculus.",
-            "Directed the trajectory of the student's learning plan and math topic evaluation to facilitate success in their school math class.",
-            "Requested by many students and parents for routine weekly tutoring sessions in a system with a standard random weekly rotation."
+            "Pyhton-pptx",
+            "Ipy-Widgets"
         ],
-        hashtags: [
-            "Calc 1-2",
-            "Algebra 1-3",
-            "Discrete Math",
-            "Statistics"
-        ]
-    }
+    },
 ]
 
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "TrackYourSubs IOS App",
+        projectName: "MusixON",
         yearCompleted: "2022",
-        description: "An IOS app to track you subscriptions and expenses, all the while presenting in a clean and professional look with a load of features. Some of the more evident features are: Budgeting (monthly / yearly option available), Current monthly & yearly total expense at a glance, Custom suggestions to meet budget, Organize (Categorization & Importance) and filter through subscriptions, Reminders via scheduled notifications, Stats page: pie chart visual, bar chart visual, and streak indicator.",
-        techStack: "Swift, SwiftUI",
+        description: "An online music player app where user can listen songs of their choice which have • Functionalities like google login/signup with full authentication, media player contains shuffle , repeat current song , user can like songs , make playlist apart from this there is search bar where user can directly search songs, singer, albums etc.",
+        techStack: " React.js,Css, Node.js, Express.js, MongoDB, Mongoose, Rapid-API.",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/feifyKike/TrackYourSubsDemo/"
+                url: "https://github.com/suju1811/MusixON"
             },
-            {
-                label: "",
-                type: "external",
-                url: "https://youtu.be/KsTx-F70OOk"
-            }
         ],
-        imageLink: "images/tracksubs_pic.png",
+        imageLink: "images/musixon.png",
         alignLeft: false
     },
     {
-        projectName: "Dynamic Portfolio Website",
+        projectName: "Dateify",
         yearCompleted: "2021",
-        description: "Developed a personal portfolio website with Python backend using the Django web development framework. Incorporated HTML, CSS, and JavaScript to construct the frontend of the website.",
-        techStack: "Django, Python, HTML, CSS, JS",
+        description: "An online dating platform where user can connect to various people and find their best match having Functionalities like Login/Signup with google , user can upload their images and can also add their preferences, Feeds where users get suggestions according to their preferences are implemented.",
+        techStack: " React.js, Css, Node.js, Mongoose, Express.js , MongoDB.",
         links: [
             {
                 label: "",
-                type: "external",
-                url: "https://maximshelepov.com"
+                type: "git",
+                url: "https://github.com/suju1811/DATEIFY"
             }
         ],
-        imageLink: "images/portfolio_pic.png",
+        imageLink: "images/dateify.png",
         alignLeft: true
     },
-    {
-        projectName: "Sudoku Game & Solver",
-        yearCompleted: "2021",
-        description: "Built a Sudoku game UI incorporating the Java Swing library. Randomly generates a Sudoku puzzle and solves itself using the backtracking algorithm written in Java..",
-        techStack: "Java",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: "https://github.com/feifyKike/sudokusolver"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://youtu.be/lXOjOrjf5hU"
-            }
-        ],
-        imageLink: "images/sudoku_pic.png",
-        alignLeft: false
-    },
-    {
-        projectName: "Trivia Quiz",
-        yearCompleted: "2020",
-        description: "Interested in taking a fun and interactive pop quiz? Using the HTML, CSS3, JavaScript, and jQuery I created a quiz that can be taken on numerous topics of your choice and gives instant feedback. The entire project is built mostly on JavaScript and all the functionality and events are controlled through functions such as ReadDisplay and Validate. The HTML portion of the online quiz only serves as the skeleton and template for elements that will be created via JS.",
-        techStack: "JS, HTML, CSS",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: "https://github.com/feifyKike/JS-API-Quiz"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://codepen.io/Max_the_coder/pen/yLXZOYL" //https://codepen.io/Max_the_coder/pen/yLXZOYL
-            }
-        ],
-        imageLink: "images/trivia_pic.png",
-        alignLeft: true
-    },
-    {
-        projectName: "Coronavirus Report",
-        yearCompleted: "2020",
-        description: "Created a program that displays up-to-date COVID-19 data and shows results in a graphical / visual representation. Coded with the Python programming language and libraries such as Matplotlib, Requests, and CSV.",
-        techStack: "Python",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: "https://youtu.be/gw5kb1QKVp0"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://github.com/feifyKike/Covid-Cases-Visual"
-            }
-        ],
-        imageLink: "images/covid_pic.png",
-        alignLeft: false
-    }
 ]
 
-const archiveLink = "https://github.com/feifyKike?tab=repositories"
+const archiveLink = "https://github.com/suju1811?tab=repositories"
 
 // --- 📭 Contact Section ---
 // 2 Options available - Choose 1
@@ -210,14 +120,13 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Currently seeking web and software development positions/internships in the RTP area for summer 2024.",
-            "Also looking to build a team for projects & startup ideas or just make professional connections."
+            "Currently seeking internships in software domain area for winter 2024."
         ], // paragraph breaks will be entered after each item,
         link: {
             email: "", // email takes precedance
-            other: "https://forms.gle/W3MswTKsPWMxEbn58"
+            other: "https://forms.gle/ShMeLMYXsF8nCYBb6"
         },
-        responseTimeMessage: "...and I'll resopnd within the next 24hrs"
+        responseTimeMessage: "...and I'll resopnd ASAP"
     },
     formEmbedLink: "" // inclusion of this link will take precedance
 }

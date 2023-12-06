@@ -9,13 +9,7 @@
                         <img :src="getImageUrl(portfolio.greeting.logo.link)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
                     </div>
                     <!-- Custom Logo -->
-                    <div v-else>
-                        <div class="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
-                            <p>&lt;</p>
-                            <p class="text-5xl md:text-7xl" id="custom-logo">M.S.</p>
-                            <p>/></p>
-                        </div>
-                    </div>
+                    
                 </div>
             </router-link>
 
